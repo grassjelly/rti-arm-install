@@ -5,6 +5,11 @@ echo "https://community.rti.com/content/forum-topic/howto-run-rti-connext-dds-ra
 echo "PRESS [ENTER] TO CONTINUE"
 read
 
+#Install Java8
+sudo apt-get install -y software-properties-common
+sudo apt-get install -y python-software-properties
+sudo add-apt-repository ppa:webupd8team/java
+sudo apt-get update
 sudo apt-get install -y oracle-java8-installer
 
 echo "export JREHOME=/usr/lib/jvm/java-8-oracle" >> ~/.bashrc
